@@ -1,0 +1,81 @@
+gitHub Notes.txt
+================
+http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/
+installed
+installed Git-2.9.3.2-64-bit.exe
+
+!! use edit from notpad menu NT right click mousepwd
+
+
+== git config
+git config --get user.email
+git config --global user.name
+== cd /c/Dev/gitHub/project01
+
+create MyProject on gitHub
+done
+
+mkdir ~/MyProject
+cd ~/MyProject
+git init
+touch Readme.txt
+git status
+git add Readme.txt
+git commit -m "Add Readme.txt"
+git remote add origin https://github.com/chiefy321/myproject.git
+git remote -v
+git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+git push --set-upstream origin master
+
+That worked OK
+Next continue with Part 2
+At ALL together nowadd an icecream.jpg
+but use mynotes/notes.txt
+
+cd ~
+mkdir ~/mynotes
+cd ~/mynotes
+ls /c/Dev/gitHub/
+cp /c/Dev/gitHub/notes.txt .
+git init
+git status
+git add notes.txt
+git commit -m “Add notes.txt.”
+#johnH: this should fail because I have not created the remote repo on gitHub
+git remote add origin https://github.com/chiefy321/mynotes.git
+git remote -v
+git push
+
+
+
+
+
+
+
+== git
+git init
+
+now Part 2 of tutorial.
+=======================
+git status
+git remote -v
+touch localNotes.txt
+git add localNotes.txt
+git commit -m "localNotes.txt"
+git remote add origin https://github.com/chiefy321/project01.git
+git remote -v
+git push
+git push --set-upstream origin master
+git pull   
+      #this failed
+git branch --set-upstream-to=origin/project01 master
+      #failed suggets=> git fetch
+git push -u
+	  
+
+
+
+
