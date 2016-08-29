@@ -64,6 +64,23 @@ To https://github.com/chiefy321/mynotes.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 
+my pull made no difference
+https://help.github.com/articles/fetching-a-remote/
+try
+git pull remotename branchname
+git pull mynotes master
+fatal: 'mynotes' does not appear to be a git repository
+fatal: Could not read from remote repository.
+try
+git pull chiefy321/mynotes master
+
+still no good
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+git pull origin mater
+This workednow push again
+git push --set-upstream origin master
+
+
 
 
 
