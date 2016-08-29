@@ -47,7 +47,24 @@ git commit -m “Add notes.txt.”
 #johnH: this should fail because I have not created the remote repo on gitHub
 git remote add origin https://github.com/chiefy321/mynotes.git
 git remote -v
-git push
+git push  #this failed
+git push --set-upstream origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/chiefy321/mynotes.git/' not found
+#this is the fail I expected earlier
+on gitHub create new repo mynotes
+OK
+git push --set-upstream origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 888 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chiefy321/mynotes.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+
 
 
 
